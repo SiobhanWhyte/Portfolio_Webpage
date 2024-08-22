@@ -32,17 +32,11 @@ header {
 }
 
 header h1 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 0;
     padding-right: 2rem; /* Space between the heading and navigation */
     align-items: left;
-}
-
-header .logo {
-    width: 40px; /* Adjust the width of the logo as needed */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: .5rem; /* Space between the logo and text */
-    
+    padding-left: 13rem;
 }
 
 /* Navigation */
@@ -51,7 +45,7 @@ nav ul {
     display: flex;
     gap: 1rem;
     margin: 0;
-    padding: 0;
+    padding-right: 15rem;
 }
 
 nav ul li {
