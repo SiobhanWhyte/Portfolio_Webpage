@@ -142,24 +142,64 @@ section h2 {
 
 /* Projects Section */
 #projects {
-    background: white;
-    padding: 2rem 1rem;
+    padding: 3rem 0;
+    background-color: #f8f9fa; /* Light gray background */
     text-align: center;
 }
 
+#projects h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333; /* Darker text for contrast */
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem; /* Space between the grid items */
+}
+
 .project {
-    background: white;
-    padding: 1.5rem;
-    margin: 1rem 0;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+}
+
+.project img {
+    width: 80px; /* Size of the icon/image */
+    height: auto;
+    margin-bottom: 1rem;
 }
 
 .project h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #2980b9;
+    color: #134FCC; /* Use the main accent color */
 }
+
+.project p {
+    font-size: 1rem;
+    color: #666; /* Subtle text color */
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #134FCC;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
 
 /* Contact Section */
 #contact {
